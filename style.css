@@ -1,13 +1,36 @@
 html, body {
 	height: 100%;
+    width: 100%;
+    margin:0;
 }
 
-#hjumbodiv1 {
-	text-align:center;
-	height: 30%;
+.jumbotron {
+    padding: 40px 25px;
+    font-family: Montserrat, sans-serif;
 }
 
-#hdiv1 {
-	height: 20%
+
+#topdesc {
+    display:none;
+}
+
+.vcenter {
+    vertical-align:middle;
+    position:absolute;
+    top:50%;
+    right:0;
+    left:0;
+}
+
+@media screen and (min-width:680px){
+    #topdesc {
+        display:block;
+    }
+}
+
+@media screen and (max-height:440px){
+    #jumbodivh {
+        display:none;
+    }
 }
 
